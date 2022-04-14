@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		240B67F32807668F00837DE4 /* homeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240B67F22807668F00837DE4 /* homeScreen.swift */; };
+		240B67F528076A6A00837DE4 /* moodRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240B67F428076A6A00837DE4 /* moodRecord.swift */; };
+		240B67F728076A8600837DE4 /* inputMoodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240B67F628076A8600837DE4 /* inputMoodView.swift */; };
+		240B67F928076AAD00837DE4 /* moodLogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240B67F828076AAD00837DE4 /* moodLogView.swift */; };
+		240B67FB28076AC600837DE4 /* settingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240B67FA28076AC600837DE4 /* settingsView.swift */; };
 		241E595D27F7D07D003F87D5 /* moodtrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241E595C27F7D07D003F87D5 /* moodtrackerApp.swift */; };
 		241E595F27F7D07D003F87D5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241E595E27F7D07D003F87D5 /* ContentView.swift */; };
 		241E596127F7D089003F87D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 241E596027F7D089003F87D5 /* Assets.xcassets */; };
@@ -34,6 +39,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		240B67F22807668F00837DE4 /* homeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homeScreen.swift; sourceTree = "<group>"; };
+		240B67F428076A6A00837DE4 /* moodRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = moodRecord.swift; sourceTree = "<group>"; };
+		240B67F628076A8600837DE4 /* inputMoodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = inputMoodView.swift; sourceTree = "<group>"; };
+		240B67F828076AAD00837DE4 /* moodLogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = moodLogView.swift; sourceTree = "<group>"; };
+		240B67FA28076AC600837DE4 /* settingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = settingsView.swift; sourceTree = "<group>"; };
 		241E595927F7D07D003F87D5 /* moodtracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = moodtracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		241E595C27F7D07D003F87D5 /* moodtrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = moodtrackerApp.swift; sourceTree = "<group>"; };
 		241E595E27F7D07D003F87D5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -74,6 +84,11 @@
 		241E595027F7D07D003F87D5 = {
 			isa = PBXGroup;
 			children = (
+				240B67F22807668F00837DE4 /* homeScreen.swift */,
+				240B67F628076A8600837DE4 /* inputMoodView.swift */,
+				240B67F828076AAD00837DE4 /* moodLogView.swift */,
+				240B67FA28076AC600837DE4 /* settingsView.swift */,
+				240B67F428076A6A00837DE4 /* moodRecord.swift */,
 				241E595B27F7D07D003F87D5 /* moodtracker */,
 				241E596C27F7D089003F87D5 /* moodtrackerTests */,
 				241E597627F7D089003F87D5 /* moodtrackerUITests */,
@@ -257,6 +272,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				240B67F32807668F00837DE4 /* homeScreen.swift in Sources */,
+				240B67F528076A6A00837DE4 /* moodRecord.swift in Sources */,
+				240B67FB28076AC600837DE4 /* settingsView.swift in Sources */,
+				240B67F928076AAD00837DE4 /* moodLogView.swift in Sources */,
+				240B67F728076A8600837DE4 /* inputMoodView.swift in Sources */,
 				241E595F27F7D07D003F87D5 /* ContentView.swift in Sources */,
 				241E595D27F7D07D003F87D5 /* moodtrackerApp.swift in Sources */,
 			);
