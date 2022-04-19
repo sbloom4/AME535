@@ -9,8 +9,33 @@ import SwiftUI
 
 struct inputMoodView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
+
+            
+        ZStack{
+            
+            VStack {
+                
+                Text(Date(), style: .date)
+                    .font(.headline)
+                    .fontWeight(.bold)
+                    .foregroundColor(Color("#cb997e"))
+                    .multilineTextAlignment(.leading)
+                
+                Spacer()
+                    .frame(height: 50)
+                
+                Text("Segmented Control")
+                
+                Spacer()
+                    .frame(height: 15)
+                
+                
+                        
+                    
+                    
+                }
+            }
+        }
 }
 
 struct inputMoodView_Previews: PreviewProvider {

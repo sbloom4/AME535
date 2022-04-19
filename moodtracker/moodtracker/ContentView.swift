@@ -15,8 +15,8 @@ struct ContentView: View {
     @State private var isActive = false
     var body: some View {
         NavigationView{
-        ZStack{
-            Color("#6b705c").ignoresSafeArea()
+            ZStack{
+                Color("#6b705c").ignoresSafeArea()
                 LazyVStack{
                     Text("MoodTracker")
                         .font(.title)
@@ -26,10 +26,10 @@ struct ContentView: View {
                     Button("New User?") {
                         sheetView = true
                     }
-                    .padding(10.0)
-                    .cornerRadius(/*@START_MENU_TOKEN@*/5.0/*@END_MENU_TOKEN@*/)
-                    .background(/*@START_MENU_TOKEN@*//*@PLACEHOLDER=View@*/Color("#cb997e")/*@END_MENU_TOKEN@*/)
-                    .foregroundColor(/*@START_MENU_TOKEN@*/Color("#ffe8d6")/*@END_MENU_TOKEN@*/)
+                    .padding(15.0)
+                    .cornerRadius(20.0)
+                    .background(Color("#cb997e"))
+                    .foregroundColor(Color("#ffe8d6"))
                     .sheet(isPresented: $sheetView) {
                         
                         Text("Welcome to MoodTracker!")
@@ -46,7 +46,7 @@ struct ContentView: View {
                         
                         TextField("Name:", text: $userName)
                             .padding(3.0)
-                            .border(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/, width: /*@START_MENU_TOKEN@*/1/*@END_MENU_TOKEN@*/)
+                            .border(Color.black/*@END_MENU_TOKEN@*/, width: /*@START_MENU_TOKEN@*/1)
                         Button("Submit")
                         {
                             sheetView = false
@@ -57,28 +57,29 @@ struct ContentView: View {
                             sheetView = false
                         }
                     }
-                    
+                    Spacer()
+                        .frame(height: 10)
                     // code by HackingwithSwift
                     NavigationLink(destination: homeScreen(), isActive: $isActive){ EmptyView() }
                     Button("Returning User") {
                         isActive = true
                     }
-                    .padding(10.0)
-                    .cornerRadius(/*@START_MENU_TOKEN@*/5.0/*@END_MENU_TOKEN@*/)
-                    .background(/*@START_MENU_TOKEN@*//*@PLACEHOLDER=View@*/Color("#cb997e")/*@END_MENU_TOKEN@*/)
-                    .foregroundColor(/*@START_MENU_TOKEN@*/Color("#ffe8d6")/*@END_MENU_TOKEN@*/)
-                    }
-                    
+                    .padding(15.0)
+                    .cornerRadius(20.0)
+                    .background(Color("#cb997e"))
+                    .foregroundColor(Color("#ffe8d6"))
                 }
                 
-                        
-                        
             }
-                
+            
+            
+            
         }
-            
-            
+                
     }
+            
+            
+}
             
 
 

@@ -9,7 +9,8 @@ import SwiftUI
 
 struct settingsView: View {
     var body: some View {
-        Text(Date(), style: .date)
+        
+        Text("lorem ipsum")
     }
 }
 
