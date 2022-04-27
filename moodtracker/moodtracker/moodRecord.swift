@@ -7,4 +7,9 @@
 
 import Foundation
 
+struct moodRecord
+{
+    var mood: Int
+}
+
 

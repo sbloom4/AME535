@@ -23,16 +23,12 @@ struct homeScreen: View {
                         Text("Your Moods")
                 })
                 
-                NavigationLink(destination: settingsView(),
-                    label: {
-                    
-                        Text("Settings")
-                })
 
                 
             }
             
-        }
+        }.navigationBarHidden(true)
+
     }
 }
 
