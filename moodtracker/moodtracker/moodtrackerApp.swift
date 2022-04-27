@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct moodtrackerApp: App {
+    @StateObject var store = moodStore()
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(store)
         }
     }
 }

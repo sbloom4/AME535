@@ -10,6 +10,10 @@ import Foundation
 
 struct inputMoodView: View {
     
+    //refer to the moodStore, in here? or...
+    @StateObject var store: moodStore = moodStore()
+    @State var newRecord = moodRecord(rating: 0)
+    
     @State var mood = 0
     @State var todaysDate = Date()
         var body: some View {

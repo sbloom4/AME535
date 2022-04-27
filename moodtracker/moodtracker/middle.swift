@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct middle: View {
+    //reference to the moodStore array, set the rating to 3 for now
+    @EnvironmentObject var store: moodStore
+    @State var newMood = moodRecord(rating: 3)
     
     @State private var hasEaten = false
     @State private var isAngry = false
@@ -108,7 +111,9 @@ struct middle: View {
                 
                 }.padding()
                 }
-                    
+                    Button("Submit Your Day") {
+                        store.addMood(newMood)
+                    }.frame(alignment: .center)
                 }
             }
         }
