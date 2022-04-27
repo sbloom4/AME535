@@ -17,12 +17,9 @@ struct middle: View {
     @State private var isLonely = false
     @State private var isTired = false
     
-    @State private var lastAte = ""
-    @State private var angryVent = ""
-    @State private var lonelyVent = ""
-    @State private var lastSlept = ""
     @State private var howSlept = ""
     @State private var venting = ""
+    @State private var angryVent = ""
     
 
     
@@ -62,12 +59,7 @@ struct middle: View {
                         Text("Have you eaten?")
                     }.toggleStyle(SwitchToggleStyle(tint: Color("#6b705c")))
                     
-                    if hasEaten {
-                        Text("When was the last time you ate?")
-                        TextField("When was the last time you ate?", text: $lastAte)
-                            .padding()
-                            .border(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/, width: /*@START_MENU_TOKEN@*/1/*@END_MENU_TOKEN@*/)
-                    }
+                    
                     
                     Toggle(isOn: $isAngry.animation()) {
                         Text("Did something make you upset today?")
@@ -84,12 +76,7 @@ struct middle: View {
                         Text("Do you feel lonely?")
                     }.toggleStyle(SwitchToggleStyle(tint: Color("#6b705c")))
                     
-                    if isLonely {
-                        Text("Do you want to talk about what made you feel loney?.")
-                        TextField("What made you lonely?", text: $lonelyVent)
-                            .padding()
-                            .border(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/, width: /*@START_MENU_TOKEN@*/1/*@END_MENU_TOKEN@*/)
-                    }
+                  
                     
                     Toggle(isOn: $isTired.animation()) {
                         Text("Are you tired?")
