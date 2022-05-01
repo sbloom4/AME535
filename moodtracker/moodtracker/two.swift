@@ -7,10 +7,10 @@
 
 import SwiftUI
 
-struct middle: View {
+struct two: View {
     //reference to the moodStore array, set the rating to 3
     @EnvironmentObject var store: moodStore
-    @State var newMood = moodRecord(rating: 3)
+    @State var newMood = moodRecord(rating: 2)
     
     @State private var hasEaten = false
     @State private var isAngry = false
@@ -110,8 +110,8 @@ struct middle: View {
     }
 }
 
-struct middle_Previews: PreviewProvider {
+struct two_Previews: PreviewProvider {
     static var previews: some View {
-        middle()
+        two()
     }
 }

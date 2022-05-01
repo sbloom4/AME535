@@ -45,13 +45,13 @@ struct inputMoodView: View {
                     case 1:
                         one()
                     case 2:
-                        middle()
+                        two()
                     case 3:
                         middle()
                     case 4:
                         four()
                     case 5:
-                        four()
+                        five()
                     default:
                         Text("")
                     }

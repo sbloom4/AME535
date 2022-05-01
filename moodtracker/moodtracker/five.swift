@@ -7,10 +7,10 @@
 
 import SwiftUI
 
-struct four: View {
+struct five: View {
     //reference to the moodStore array, set the rating to 4
     @EnvironmentObject var store: moodStore
-    @State var newMood = moodRecord(rating: 4)
+    @State var newMood = moodRecord(rating: 5)
     
     @State private var whatWentWell = ""
     @State private var learnNew = ""
@@ -63,6 +63,7 @@ struct four: View {
                     newMood.input2 = learnNew
                     newMood.input3 = venting
                     store.addMood(newMood)
+                    print(store.moodRecords)
                 }.frame(alignment: .center)
         
                 
@@ -71,8 +72,8 @@ struct four: View {
         }
 }
 
-struct four_Previews: PreviewProvider {
+struct five_Previews: PreviewProvider {
     static var previews: some View {
-        four()
+        five()
     }
 }
